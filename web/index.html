@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Use this HTML tag instead for production -->
+<!-- <html manifest="manifest.appcache"> -->
+<html>
+	<head>
+		<!-- App info -->
+		<title>TapChat</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, , minimal-ui">
+		<!-- Styles -->
+		<link rel="stylesheet" href="//cdn.kik.com/app/2.0.1/app.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+
+		<!-- Code for user interface -->
+		<div class="app-page" data-page="home">
+			<!-- Show app name in the top bar -->
+			<div class="app-topbar">
+				<div class="app-title">TapChat</div>
+			</div>
+			<div class="app-content">
+				<!-- Show received message -->
+				<div id="message" class="app-section">
+					<p class="message-title">RECEIVED MESSAGE</p>
+					<p class="message-text"></p>
+				</div>
+				<div class="app-section">
+					<!-- Area to type your message and send to friends -->
+					<form id="form-message">
+	          <textarea id="input-message" class="app-input" placeholder="Enter a message..."></textarea>
+	        	<div id="button-send" class="app-button">Send</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="//zeptojs.com/zepto.min.js"></script>
+		<script src="//cdn.kik.com/kik/1.0.9/kik.js"></script>
+		<script src="//cdn.kik.com/app/2.0.1/app.min.js"></script>
+		<script src="/js/main.js"></script>
+
+	</body>
+</html>
