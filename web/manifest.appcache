@@ -1,12 +1,12 @@
 CACHE MANIFEST
 
 //cdn.kik.com/app/2.0.1/app.min.css
-/css/styles.css
+/css/style.css
 
 //zeptojs.com/zepto.min.js
 //cdn.kik.com/kik/1.0.9/kik.js
 //cdn.kik.com/app/2.0.1/app.min.js
-/main.js
+/js/main.js
 
 NETWORK:
 *

@@ -1,18 +1,16 @@
-// Code to load app page
-(function (App) {
-	try {
-		App.restore();
-	} catch (err) {
-		App.load('home');
-	}
-})(App);
-
-$(function () {
+App.controller('home', function (page) {
 	// Do stuff when the "Send" button is clicked
-	$('#button-send').click(function () {
-		var message = $('#input-message').val();
-		// Shows dialog if you are not on Kik browser
-		if (!kik.send) {
+	$(page).find('#button-send').click(function () {
+		var message = $(page).find('#input-message').val();
+		if (kik.send) {
+			// Send message to friends
+			kik.send({
+				title: 'Incoming Message!',
+				text: 'This will self-destruct 3 seconds after opening.',
+				data: {'text': message}
+			});
+		} else {
+			// Shows dialog if you are not on Kik browser
 			App.dialog({
         title        : 'Install Kik' ,
         text         : 'This is a feature of Kik Messenger. Install it to send messages.' ,
@@ -30,22 +28,27 @@ $(function () {
           }
         }
       });
-      return;
 		}
-		// Send message to friends
-		kik.send({
-			title: 'Incoming Message!',
-			text: 'This will self-destruct 3 seconds after opening.',
-			data: {'text': message}
-		});
 	});
+
 	// Do stuff if a Kik message is received
 	if (kik.message) {
 		// Show received message for 3 seconds
-		$('#message').show();
-		$('#message .message-text').text(kik.message.text);
+		$(page).find('#message').css('display', 'block');
+		$(page).find('#message .message-text').text(kik.message.text);
 		setTimeout(function () {
-			$('#message').hide();
+			$(page).find('#message').css('display', 'none');
 		}, 3000);
 	}
 });
+
+
+
+// Code to load app page
+(function (App) {
+	try {
+		App.restore();
+	} catch (err) {
+		App.load('home');
+	}
+})(App);
