@@ -5,6 +5,7 @@ Tap Chat is a simple messaging app that allows users to send messages that disap
 
 <img align="left" style="float:left;" src="sample.png">
 
+
 ### Make It Your Own / Cloud Setup
 
   1. Fork this repository
@@ -13,6 +14,7 @@ Tap Chat is a simple messaging app that allows users to send messages that disap
   4. Share your app with your friends on Kik Messenger! The link is provided to you when you click on the **Live Demo** button.  
   
 **Note:** To use the **Live Demo** button on your own fork, you will need to sign up for a Kite account. To sign up, simply, click the **Live Demo** button on your own repository.   
+
 
 ### Local Setup
 
@@ -27,10 +29,6 @@ From the command line:
 1. Run `npm start`
 2. Visit [localhost:5000](http://localhost:5000/) on your browser to see the app running.
 
-
-### Troubleshooting dependencies
-
-Should you encounter problems while installing dependencies, uninstall all previous dependency versions (global and local). Then, the command `npm install` again.
 
 ### Kik Developer Resources
 
