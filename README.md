@@ -1,4 +1,4 @@
-Kik TapChat  [![Kite](https://usekite.com/live-demo-button.png)](https://usekite.com/deploy)
+Kik TapChat  [![Kite](https://usekite.com/live-demo-button.png)](https://usekite.com/deploy/yHfKKGPGcD5wFsrxE)
 ============
 
 Tap Chat is a simple messaging app that allows users to send messages that disappear after 3 seconds.
