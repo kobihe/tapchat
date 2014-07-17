@@ -36,9 +36,9 @@ App.controller('home', function (page) {
 		// Show received message for 3 seconds
 		$(page).find('#message').css('display', 'block');
 		$(page).find('#message .message-text').text(kik.message.text);
-		setTimeout(function () {
-			$(page).find('#message').css('display', 'none');
-		}, 3000);
+		//setTimeout(function () {
+		//	$(page).find('#message').css('display', 'none');
+		//}, 3000);
 	}
 });
 
