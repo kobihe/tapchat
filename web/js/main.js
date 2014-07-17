@@ -5,8 +5,8 @@ App.controller('home', function (page) {
 		if (kik.send) {
 			// Send message to friends
 			kik.send({
-				title: 'Incoming Message!',
-				text: 'This will self-destruct 3 seconds after opening.',
+				title: 'Incoming Event Request!',
+				text: 'An event request was created for you at:',
 				data: {'text': message}
 			});
 		} else {
